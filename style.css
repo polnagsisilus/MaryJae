@@ -1,0 +1,324 @@
+
+
+body {
+    margin: 0;
+    [class*="col-"] {
+      width: 100%;
+    }
+    font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #c83c89 ;
+    width: 100%;
+    
+  }
+
+  .topnav .burger-icon{
+  font-size: 25px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 1%;
+  }
+
+  .show{
+    background-color: #7e2255;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  
+  }
+
+  
+ .topnav a:hover {
+    
+    background-color: #F1155B;
+    color: black;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  
+  .topnav a.active {
+    background-color: #aa0404;
+    color: white;
+  }
+ 
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FF9BD3;
+    color: white;
+    text-align: center;
+    
+ }
+
+ .footer :hover{
+    margin-top: 10px;
+    transition: 1s;
+ }
+
+ .social-icons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ .social-icons :hover{
+  font-size: 30px;
+  color: white;
+ }
+
+ .fa-facebook{
+  font-size: 20px;
+  color: blue;
+ }
+ .fa-instagram{
+  margin-left: 5px;
+  font-size: 20px;
+  color: red;
+ }
+
+ .footer h1{
+  font-size: 10px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+ }
+ 
+ .container img{
+  margin-top: 40px;
+  border-radius: 25px;
+  animation-name: banner;
+  animation-duration: 2s;
+ }
+
+ @keyframes banner {
+  from{margin-right: 100px;}
+  to{margin-right: 0px;}
+ }
+
+
+ /*PHONE */
+ @media only screen and (max-width: 600px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .topnav img{
+    display: none;
+  }
+
+  #conts #contatiner {
+    text-align: center;
+  }
+
+  #conts{
+    width: 80%;
+  }
+  .topnav a {
+    
+    color: #f2f2f2;
+    font-size: 17px;
+
+  
+  }
+
+  .topnav ul a:hover {
+    
+    background-color: #F1155B;
+    color: black;
+    transition: 0.5s;
+    
+  }
+  
+
+  #banner img{
+    display: none;
+  }
+
+  .footer{
+    text-align: center;
+  }
+  .burger-icon {
+    display: block;
+    text-shadow: #333;
+    color: white;
+}
+
+ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+li {
+    margin: 10px 0;
+}
+
+ul.show {
+    display: flex;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FF9BD3;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer :hover{
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.social-icons{
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.social-icons :hover{
+font-size: 30px;
+color: white;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
+  
+
+
+  .topnav .burger-icon{
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #c83c89 ;
+    
+    
+  }
+
+  .topnav .burger-icon{
+  font-size: 25px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 1%;
+  }
+
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  
+  }
+
+  
+ .topnav a:hover {
+    
+    background-color: #F1155B;
+    color: black;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  
+  .topnav a.active {
+    background-color: #aa0404;
+    color: white;
+  }
+ 
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FF9BD3;
+    color: white;
+    text-align: center;
+    
+ }
+
+ .footer :hover{
+    margin-top: 10px;
+    transition: 1s;
+ }
+
+ .social-icons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 1%;
+ }
+
+ .social-icons :hover{
+  font-size: 30px;
+  color: black;
+ }
+
+ .fa-facebook{
+  font-size: 20px;
+  color: blue;
+ }
+ .fa-instagram{
+  margin-left: 5px;
+  font-size: 20px;
+  color: red;
+ }
+
+ .footer h1{
+  font-size: 10px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+ }
+ 
+ .container img{
+  margin-top: 40px;
+  border-radius: 25px;
+  animation-name: banner;
+  animation-duration: 2s;
+ }
+
+ @keyframes banner {
+
+ }
+}
+
