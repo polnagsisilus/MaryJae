@@ -181,6 +181,10 @@ img {vertical-align: middle;}
   </div>
 </center>
 
+<div class="container">
+
+  
+</div>
 
 
 
@@ -287,10 +291,7 @@ img {vertical-align: middle;}
 </body>
 
 <script>
-    function toggleMenu() {
-        var navList = document.querySelector('ul');
-        navList.classList.toggle('show');
-    }
+    
     let slideIndex = 0;
 showSlides();
 
@@ -310,5 +311,9 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+function toggleMenu() {
+        var navList = document.querySelector('ul');
+        navList.classList.toggle('show');
+    }
 </script>
 </html>
